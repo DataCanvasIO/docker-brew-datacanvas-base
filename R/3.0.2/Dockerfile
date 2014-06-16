@@ -14,4 +14,4 @@ RUN /usr/bin/R --version
 
 # Adding the script and run it for installing R packages.
 ADD installRPackages.R /tmp/installRPackages.R
-CMD Rscript /tmp/installRPackages.R
+RUN /usr/bin/Rscript /tmp/installRPackages.R
